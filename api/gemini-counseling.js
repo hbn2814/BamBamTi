@@ -66,7 +66,7 @@ export default async function handler(req, res) {
     `[교사의 상담 고민]: ${teacherConcern}`,
   ].join("\n");
 
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-pro:generateContent?key=${apiKey}`;
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent?key=${apiKey}`;
 
   try {
     const response = await fetch(url, {
