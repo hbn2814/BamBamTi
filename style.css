@@ -416,6 +416,180 @@ button {
   font-size: 13px;
 }
 
+.counseling-panel {
+  margin-top: 32px;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.counseling-body {
+  display: grid;
+  gap: 20px;
+}
+
+.counseling-placeholder {
+  color: var(--muted);
+  font-size: 14px;
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+}
+
+.selected-student-info {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  padding: 16px;
+  border-radius: 8px;
+  background: var(--surface-alt);
+}
+
+.selected-student-info .eyebrow {
+  margin-bottom: 4px;
+}
+
+.selected-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.selected-alias {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.counseling-form label {
+  font-weight: 600;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.counseling-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font: inherit;
+  font-size: 14px;
+  line-height: 1.6;
+  resize: vertical;
+  color: var(--ink);
+  background: var(--surface);
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.counseling-form textarea:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(66, 99, 235, 0.15);
+}
+
+.preview-details {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.preview-details summary {
+  padding: 10px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--surface-alt);
+  color: var(--muted);
+}
+
+.preview-json {
+  margin: 0;
+  padding: 14px;
+  font-family: "Consolas", "Courier New", monospace;
+  font-size: 13px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-all;
+  background: #f8f9fa;
+  color: var(--ink);
+}
+
+.counseling-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.counseling-message {
+  margin: 0;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.counseling-message.error {
+  background: #fef2f2;
+  color: var(--danger);
+  border: 1px solid #fecaca;
+}
+
+.counseling-message.info {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid #c7d2fe;
+}
+
+.counseling-result {
+  padding: 20px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface-alt);
+}
+
+.result-content {
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.result-content p {
+  margin: 0 0 8px;
+}
+
+.response-heading {
+  margin: 20px 0 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.result-content .response-heading:first-child {
+  margin-top: 0;
+}
+
+.counseling-disclaimer {
+  margin: 0;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  color: #92400e;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.counseling-request-btn {
+  width: 100%;
+  margin-top: 12px;
+}
+
 .hidden {
   display: none !important;
 }
